@@ -1,0 +1,15 @@
+{% load static %}
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="{% static 'image/pizza2.png' %}" alt="" class="logo-img">
+    Piceria Brothers
+  </div>
+  <ul>
+    <li><a href="{% url 'homePage'%}">Ballina</a></li>
+    <li><a href="{% url 'menuPage' %}">Menu</a></li>
+    <li><a href="{% url 'porositonlinePage' %}">Porosit Online</a></li>
+    <li><a href="{% url 'rrethneshPage' %}">Rreth Nesh</a></li>
+    <li><a href="{% url 'kontaktPage' %}">Kontakti</a></li>
+  </ul>
+</nav>

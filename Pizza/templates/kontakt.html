@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="contact-page">
+  <h2>Na Kontakto</h2>
+
+  <div class="contact-container">
+    
+    
+    <div class="contact-location">
+      <h3>📍Vendodhja Jone</h3>
+      <p>Pizza Brothers</p>
+      <p>Rruga Kryesore, Tiranë</p>
+      <p>Tel: +355 67 123 456</p>
+      <p>Email: info@pizzabrothers.al</p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11985.390508532335!2d19.80655461979437!3d41.3230536229018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1748521064478!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contact-form">
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn-submit">Dërgo</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+

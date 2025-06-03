@@ -1,0 +1,188 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1.5px solid #d1d8e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.3);
+}
+
+
+h3 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+
+.produktet-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.produkt-card {
+    background: #ecf0f1;
+    border-radius: 12px;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.produkt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.produkt-card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.produkt-card strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    vertical-align: middle;
+}
+
+
+button[type="submit"] {
+    background-color: #2980b9;
+    color: white;
+    font-weight: 700;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    box-shadow: 0 6px 15px rgba(41, 128, 185, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1c5980;
+}
+
+@media (max-width: 600px) {
+    .produktet-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .produkt-card {
+        width: 80%;
+    }
+    
+    form {
+        padding: 20px;
+    }
+}
+
+
+.faleminderit-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.faleminderit-container h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.faleminderit-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.faleminderit-container .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #27ae60;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.4);
+}
+
+.faleminderit-container .btn:hover {
+  background-color: #219150;
+  box-shadow: 0 6px 14px rgba(33, 145, 80, 0.6);
+}

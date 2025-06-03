@@ -1,0 +1,46 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="menupizza">
+    <h1>🍕 Menuja e Picave</h1>
+</div>
+
+<ul class="pizza-list">
+    {% for pizza in pizzas %}
+    <li class="pizza-item">
+        {% if pizza.foto %}
+            <img src="{{ pizza.foto.url }}" alt="{{ pizza.emri }}" class="pizza-img">
+        {% endif %}
+        <h3 class="pizza-name">{{ pizza.emri }}</h3>
+        <p class="pizza-description">{{ pizza.pershkrimi }}</p>
+        <p class="pizza-price">Çmimi: {{ pizza.cmimi }} €</p>
+    </li>
+    {% empty %}
+    <li>Nuk ka picat në menunë aktualisht.</li>
+    {% endfor %}
+</ul>
+
+<hr>
+
+<div class="menupije">
+    <h1>🥤 Menuja e Pijeve</h1>
+</div>
+
+<ul class="pije-list">
+    {% for pije in pijet %}
+    <li class="pije-item">
+        {% if pije.foto %}
+            <img src="{{ pije.foto.url }}" alt="{{ pije.emri }}" class="pije-img">
+        {% endif %}
+        <h3 class="pije-name">{{ pije.emri }}</h3>
+        <p class="pije-pershkrimi">{{ pije.pershkrimi }}</p>
+        <p class="pije-price">Çmimi: {{ pije.cmimi }} €</p>
+    </li>
+    {% empty %}
+    <li>Nuk ka pije në menunë aktualisht.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+

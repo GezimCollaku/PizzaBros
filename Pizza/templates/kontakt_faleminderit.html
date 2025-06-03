@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container thank-you-page">
+    <h1>Faleminderit që na kontaktuat!</h1>
+    <p>Do të përgjigjemi sa më shpejt të jetë e mundur.</p>
+    <a href="{% url 'homePage' %}" class="btn btn-primary">Kthehu në faqen kryesore</a>
+</div>
+{% endblock %}  

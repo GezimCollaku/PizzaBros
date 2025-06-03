@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="about-page">
+
+  <section class="about-section">
+    <h2>Kush jemi ne?</h2>
+    <p>Pizza Brothers 🍕 është më shumë sesa një piceri – është një histori familjare e pasionit dhe përkushtimit ndaj kuzhinës shqiptare, që nisi në vitin 2015. Me një dashuri të thellë për shijen autentike dhe respekt të pakompromis për cilësinë, ne krijojmë pica të freskëta, të përgatitura me përpikmëri dhe kujdes në çdo hap. Çdo pjatë është një ftesë për të shijuar aromat e origjinës, duke sjellë në tryezën tuaj ngrohtësinë dhe mikpritjen që karakterizojnë traditën tonë familjare. Bashkohuni me ne dhe përjetoni shijen e vërtetë të Shqiperise, të bërë me zemër!</p>
+  </section>
+
+  <section class="values">
+    <h3>Çfarë na veçon</h3>
+    <ul>
+      <h3>🥬
+      <li>Përbërës të freskët çdo ditë</li>
+      </h3>
+      <h3>📝
+      <li>Receta tradicionale shqiptare</li>
+      </h3>
+      <h3>🚀
+      <li>Shërbim i shpejtë dhe mikpritës</li>
+      </h3>
+      <h3>👪
+      <li>Ambienti familjar dhe i ngrohtë</li>
+      </h3>
+    </ul>
+  </section>
+
+  <section class="team-photo">
+    <h3>Stafi ynë</h3>
+    <img src="{% static 'image/stafi.jpg' %}" alt="Stafi i Pizza Brothers">
+  </section>
+
+  <section class="call-to-action">
+    <p>Ejani dhe provoni shijen e vërtetë të Shqiperisë në zemër të qytetit tuaj!</p>
+    <a href="{% url 'menuPage' %}" class="btn">Shiko Menunë</a>
+  </section>
+
+</div>
+{% endblock %}

@@ -1,0 +1,151 @@
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.contact-page {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+.contact-page h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+.contact-location {
+    flex: 1 1 350px;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contact-location h3 {
+    margin-top: 0;
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.contact-location p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.contact-location iframe {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.contact-form {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form p {
+
+    padding-left: 50px;
+    font-weight: bold; 
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 6px rgba(25, 118, 210, 0.3);
+    background-color: #fff;
+    outline: none;
+}
+
+
+.btn-submit {
+    padding: 14px;
+    font-size: 16px;
+    background-color: #3c00ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 70px;
+}
+
+.btn-submit:hover {
+    background-color: #0d47a1;
+}
+
+.thank-you-page {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.thank-you-page h1 {
+    font-size: 32px;
+    color: #27ae60; 
+    margin-bottom: 20px;
+}
+
+.thank-you-page p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.thank-you-page .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.thank-you-page .btn:hover {
+    background-color: #2980b9;
+}
+

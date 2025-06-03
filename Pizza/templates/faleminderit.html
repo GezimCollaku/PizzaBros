@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<title>Faleminderit për porosinë</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="faleminderit-container" style="text-align:center; margin-top: 50px;">
+    <h2>Faleminderit për porosinë tuaj!</h2>
+    <p>Porosia juaj është pranuar dhe do të përpunohet sa më shpejt.</p>
+    <a href="{% url 'homePage' %}" class="btn">Kthehu në faqen kryesore</a>
+</div>
+
+{% endblock %}

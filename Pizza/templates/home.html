@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+
+ <section class="hero-split">
+  <div class="hero-left">
+    <h1>Mirë se erdhe në Piceria Brothers!</h1>
+    <p>Shijo picat tradicionale shqiptare të përgatitura me përbërës të freskët dhe dashuri.</p>
+    <a href="#menu" class="hero-btn">Shiko Menu-në</a>
+  </div>
+  <div class="hero-right">
+    <img src="{% static 'image/pizza2.png' %}">
+  </div>
+</section>
+<!--  -->
+
+<section class="features">
+  <h2>Pse të na zgjidhni?</h2>
+
+  <div class="feature-container">
+    <div class="feature">
+      <h3>🌿</h3>
+      <h3>Përbërës të freskët</h3>
+      <p>Përdorim vetëm përbërës organikë dhe të freskët çdo ditë.</p>
+    </div>
+    <div class="feature">
+      <h3>📝</h3>
+      <h3>Receta tradicionale</h3>
+      <p>Picat tona janë bazuar në receta autentike italiane.</p>
+    </div>
+    <div class="feature">
+      <h3>🚗</h3>
+      <h3>Porosi e shpejtë</h3>
+      <p>Shërbim i shpejtë dhe porosi online me dorëzim në derë.</p>
+    </div>
+  </div>
+</section>
+
+<!--  -->
+<section id="menu" class="menu-preview">
+  <h2>Menuja jonë</h2>
+  <div class="menu-items-wrapper">
+    <button class="prev">&#10094;</button>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="{% static 'image/pizzavegitariana.jpg' %}" alt="Pizza Vegjetariane">
+        <h4>Pizza Vegjatariane</h4>
+        <p>Domate, mozzarella dhe borzilok i freskët</p>
+      </div>
+      <div class="menu-item">
+        <img src="{% static 'image/pizzabianka.jpg' %}" alt="Pepperoni Pizza">
+        <h4>Pizza Pepperoni</h4>
+        <p>Me salcë domate, djathë dhe pepperoni</p>
+      </div>
+      <div class="menu-item">
+        <img src="{% static 'image/pizzaitalia.jpg' %}" alt="Pizza Italia">
+        <h4>Pizza Italia</h4>
+        <p>Me perime të freskëta dhe djathë</p>
+      </div>
+      <div class="menu-item">
+        <img src="{% static 'image/pizzaperime.jpg' %}" alt="Pizza Perime">
+        <h4>Pizza Perime</h4>
+        <p>Mocarela , Perime, Djathe</p>
+      </div>
+      <div class="menu-item">
+        <img src="{% static 'image/pizzasallam.jpg' %}" alt="Pizza Sallam">
+        <h4>Pizza Sallam</h4>
+        <p>Mocarela, domate,sallam dhe djathë</p>
+      </div>
+      <div class="menu-item">
+        <img src="{% static 'image/pizzasuxhuk.jpg' %}" alt="Pizza Suxhuk">
+        <h4>Pizza Suxhuk</h4>
+        <p>Mocarela, Suxhuk</p>
+      </div>
+    </div>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
+<!--  -->
+
+<section class="highlights">
+  <h2>Përse piceria jonë është ndryshe?</h2>
+  <div class="highlight-boxes">
+    <div class="highlight">
+      <h3>🔥 Furra tradicionale</h3>
+      <p>Picat tona piqen në furrë me dru për shije autentike.</p>
+    </div>
+    <div class="highlight">
+      <h3>🧀 Përbërës të freskët</h3>
+      <p>Çdo ditë sigurohemi që përbërësit të jenë të freskët dhe natyralë.</p>
+    </div>
+    <div class="highlight">
+      <h3>🚀 Dorëzim i shpejtë</h3>
+      <p>Porosit online dhe merr picën në pak minuta te dera.</p>
+    </div>
+  </div>
+</section>
+<!--  -->
+
+<!--  -->
+<section class="drinks-menu">
+  <h2>Menuja e Pijeve</h2>
+  <div class="drink-grid">
+    <div class="drink-card">
+      <img src="{% static 'image/cocacola.png' %}" alt="Coca-Cola">
+      <h4>Coca-Cola</h4>
+      <p>330ml</p>
+    </div>
+    <div class="drink-card">
+      <img src="{% static 'image/fanta.png' %}" alt="Fanta">
+      <h4>Fanta</h4>
+      <p>330ml</p>
+    </div>
+    <div class="drink-card">
+      <img src="{% static 'image/ujeigazuar.png' %}" alt="Ujë i gazuar">
+      <h4>Ujë i gazuar</h4>
+      <p>500ml</p>
+    </div>
+    <div class="drink-card">
+      <img src="{% static 'image/lengfrutash.png' %}" alt="Lëng frutash">
+      <h4>Lëng frutash</h4>
+      <p>Natyral</p>
+    </div>
+    <div class="drink-card">
+      <img src="{% static 'image/icetea.png' %}" alt="Ice Tea">
+      <h4>Ice Tea</h4>
+      <p>Pjeshkë / Limon</p>
+    </div>
+    <div class="drink-card">
+      <img src="{% static 'image/sprite.png' %}" alt="Sprite">
+      <h4>Sprite</h4>
+      <p>330ml</p>
+    </div>
+    <div class="drink-card">
+      <img src="{% static 'image/redbull.png' %}" alt="Red Bull">
+      <h4>Red Bull</h4>
+      <p>250ml</p>
+    </div>
+    <div class="drink-card">
+      <img src="{% static 'image/energy.png' %}" alt="Monster Energy">
+      <h4>Monster</h4>
+      <p>500ml</p>
+    </div>
+    <div class="drink-card">
+      <img src="{% static 'image/ujenatyral.png' %}" alt="Ujë natyral">
+      <h4>Ujë natyral</h4>
+      <p>500ml</p>
+    </div>
+    <div class="drink-card">
+      <img src="{% static 'image/smuthi.png' %}" alt="Smoothie Frutash">
+      <h4>Smoothie Frutash</h4>
+      <p>Mollë & Banane</p>
+    </div>
+  </div>
+</section>
+<!--  -->
+
+
+
+
+
+{% endblock %}

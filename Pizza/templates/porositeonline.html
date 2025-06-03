@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<title>Bëj Porosi</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<h2>Zgjidh produktet dhe bëj porosinë</h2>
+<form method="post">
+    {% csrf_token %}
+    
+    <!-- Të dhënat e klientit -->
+    <p>
+        <label for="id_emri">Emri:</label><br>
+        {{ form.emri }}
+    </p>
+    <p>
+        <label for="id_numri">Numri i telefonit:</label><br>
+        {{ form.numri }}
+    </p>
+    <p>
+        <label for="id_adresa">Adresa:</label><br>
+        {{ form.adresa }}
+    </p>
+
+    <!-- Pijet -->
+    <h3>Pijet</h3>
+    <div class="produktet-container">
+        {% for pije in pijet %}
+            <div class="produkt-card">
+                <label>
+                    <input type="checkbox" name="pije" value="{{ pije.id }}">
+                    {% if pije.foto %}
+                        <img src="{{ pije.foto.url }}" alt="{{ pije.emri }}" width="80" />
+                    {% endif %}
+                    <strong>{{ pije.emri }}</strong> - {{ pije.cmimi }} €
+                </label>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Pizzat -->
+    <h3>Pizzat</h3>
+    <div class="produktet-container">
+        {% for pizza in pizzat %}
+            <div class="produkt-card">
+                <label>
+                    <input type="checkbox" name="pizza" value="{{ pizza.id }}">
+                    {% if pizza.foto %}
+                        <img src="{{ pizza.foto.url }}" alt="{{ pizza.emri }}" width="80" />
+                    {% endif %}
+                    <strong>{{ pizza.emri }}</strong> - {{ pizza.cmimi }} €
+                </label>
+            </div>
+        {% endfor %}
+    </div>
+
+    <button type="submit">Dërgo Porosinë</button>
+</form>
+
+{% endblock %}
+
